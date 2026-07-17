@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rosyam Mart Food Packet</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* Navigation */
+
+nav{
+    background:#FFD700;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:black;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:white;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url("rosyam nor.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#FFD700;
+}
+
+.hero p{
+    margin:20px auto;
+    font-size:20px;
+    max-width:700px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 35px;
+    background:#FFD700;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* Section */
+
+.section{
+    padding:70px 8%;
+}
+
+.section h2{
+    text-align:center;
+    color:#FFD700;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#222;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#ddd;
+    line-height:1.6;
+}
+
+/* Footer */
+
+footer{
+    background:#FFD700;
+    color:black;
+    text-align:center;
+    padding:20px;
+    font-weight:bold;
+}
+.specialities{
+    background:black;
+    color:white;
+    padding:60px 40px;
+    text-align:center;
+    border-radius:10px;
+    width:90%;
+    margin:50px auto;
+}
+
+.specialities h2{
+    font-size:40px;
+    margin-bottom:50px;
+    font-weight:bold;
+}
+
+.speciality-container{
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.item{
+    width:220px;
+}
+
+.item img{
+    width:70px;
+    margin-bottom:20px;
+}
+
+.item h3{
+    font-size:22px;
+    line-height:1.4;
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+    <div class="logo">Rosyam Mart</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="food packet.html">Campaigns</a></li>
+        <li><a href="form.html">Forms</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+    </ul>
+</nav>
+
+<section class="hero">
+
+<div>
+<h1>Rosyam Mart Food Packet</h1>
+
+<p>
+Helping the needy and underprivileged by providing essential food packets to those in need. Join us in making a difference in our community.
+By giving a small contribution, we can help people in need.
+This food packet contains essential items such as rice, lentils, cooking oil, and other basic necessities to support families facing financial hardship.
+</p>
+
+<a href="food packet.html" class="btn">Explore Food Packets</a>
+
+</div>
+
+</section>
+
+<section class="specialities">
+    <h2>Our Specialities</h2>
+
+    <div class="speciality-container">
+
+        <div class="item">
+            <img src="icon 1.png" alt="">
+            <h3>Fresh Chicken & Beef Cuts</h3>
+        </div>
+
+        <div class="item">
+            <img src="icon 2.png" alt="">
+            <h3>Imported Groceries available in bulk</h3>
+        </div>
+
+        <div class="item">
+            <img src="icon 3.png" alt="">
+            <h3>Local Fresh Produce & Meat</h3>
+        </div>
+
+        <div class="item">
+            <img src="icon 4.png" alt="">
+            <h3>Your Trusted Halal-Friendly Grocery</h3>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="section">
+
+<h2>Related Content</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="st 2.jpg">
+
+<div class="card-content">
+<a href="about.html" style="text-decoration: none; color: inherit;">
+    <h3>ABOUT CAMPAIGN</h3>
+</a>
+
+<p>
+Get to know more about our mission and values. 
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="food.jpg">
+
+<div class="card-content">
+<a href="food packet.html" style="text-decoration: none; color: inherit;">
+                    <h3>FOOD PACKETS</h3>
+</a>
+
+<p>
+Support food assistance programs for
+families facing financial hardship.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="form.jpg">
+
+<div class="card-content">
+<a href="form.html" style="text-decoration: none; color: inherit;">
+                    <h3>FORMS</h3>
+</a>
+<p>
+Fill out forms to request food packets or volunteer for our campaigns.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Campaign Market | Together We Help the Needy.
+This website for educational purposes only. All rights reserved.
+</footer>

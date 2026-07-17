@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+        *{
+        margin:0;
+         padding:0;
+         box-sizing:border-box;
+          font-family:Arial, Helvetica, sans-serif;
+        }
+
+         body{
+        background:#111;
+        color:white;
+        }
+
+        /* Navigation */
+
+         nav{
+        background:#FFD700;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 8%;
+         }
+
+         .logo{
+         font-size:30px;
+        font-weight:bold;
+        color:black;
+         }
+
+        nav ul{
+         list-style:none;
+         display:flex;
+         }
+
+        nav ul li{
+        margin-left:25px;
+         }
+
+        nav ul li a{
+            text-decoration:none;
+            color:black;
+            font-weight:bold;
+             transition:.3s;
+        }
+
+        nav ul li a:hover{
+            color:white;
+        }
+        {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background: #000000;
+        }
+
+        .container{
+            width:100%;
+            background:rgb(7, 7, 7);
+            padding:50px 0 0;
+        }
+
+        .contact-section{
+            width:80%;
+            margin:auto;
+            text-align:center;
+            color: #eee;
+        }
+
+        .contact-section h1{
+            font-size:55px;
+            font-weight:700;
+            color: #eee;
+        }
+
+        .contact-section p{
+            margin-top:10px;
+            font-size:20px;
+            font-weight:500;
+            color: #eee;
+        }
+
+        form{
+            width:70%;
+            margin:40px auto;
+        }
+
+        .input-group{
+            display:flex;
+            gap:20px;
+        }
+
+        .field{
+            flex:1;
+            text-align:left;
+        }
+
+        .field label{
+            display:block;
+            font-size:14px;
+            margin-bottom:8px;
+        }
+
+        .field input{
+            width:100%;
+            padding:15px;
+            border:none;
+            background:#eee;
+            border-radius:30px;
+            outline:none;
+        }
+        .message-group {
+            text-align: left;
+            margin-top: 20px; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        .message-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #eee;
+        }
+
+        .message-group textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: none;
+            background: #eee;
+            border-radius: 20px; 
+            outline: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            resize: vertical; 
+        }
+        button{
+            width:20%;
+            margin-top:25px;
+            padding:15px;
+            border:none;
+            background:#FFD700;
+            color:white;
+            border-radius:30px;
+            letter-spacing:3px;
+            font-size:16px;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        button:hover{
+            background:#FFD700;
+        }
+
+        /* Bottom Box */
+
+        .info-wrapper{
+            background:#000000;
+            margin-top:200px;
+            padding:20px 20px 20px;
+            position:relative;
+        }
+
+        .info-container{
+            display:flex;
+            justify-content:space-around;
+            text-align:center;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            width:280px;
+            position:relative;
+            color: #eee;
+        }
+
+        .icon{
+            width:95px;
+            height:95px;
+            background:#FFD700;
+            border-radius:50%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            font-size:42px;
+            margin:-125px auto 25px;
+            box-shadow:0 5px 15px rgba(255, 215, 0, 0.2);
+        }
+
+        .card h3{
+            margin-bottom:15px;
+            font-size:28px;
+            color: #eee;
+        }
+
+        .card p{
+            color:#000000;
+            line-height:1.8;
+            color: #eee;
+        }
+
+        @media(max-width:768px){
+
+            .input-group{
+                flex-direction:column;
+            }
+
+            form{
+                width:90%;
+            }
+
+            .info-container{
+                gap:80px;
+            }
+
+            .contact-section h1{
+                font-size:42px;
+            }
+
+            .contact-section p{
+                font-size:16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<nav>
+    <div class="logo">Rosyam Mart</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="food packet.html">Campaigns</a></li>
+        <li><a href="form.html">Forms</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+    </ul>
+</nav>
+
+<div class="container">
+
+    <div class="contact-section">
+
+        <h1>Contact Us</h1>
+
+        <p>Any questions or remarks? Just write us a message!</p>
+
+        <form>
+
+           
+            <div class="input-group">
+
+                <div class="field">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter a valid email address">
+                </div>
+
+                <div class="field">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your Name">
+                </div>
+
+            </div>
+
+            
+            <div class="message-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Enter your message here..."></textarea>
+            </div>
+
+            <button>SUBMIT</button>
+
+
+        </form>
+
+    </div>
+
+    <div class="info-wrapper">
+
+        <div class="info-container">
+            
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-person-running"></i>
+                </div>
+
+                <a href="about.html" style="text-decoration: none; color: inherit;">
+                    <h3>ABOUT CAMPAIGN</h3>
+                    <p>
+                        Offering a <br>
+                        a food packet 
+                        to the people 
+                        who's in need
+                    </p>
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                    <h3>PHONE (LANDLINE)</h3>
+
+                <div class="contact-item">
+                    <a href="https://wa.me/qr/55JETMBOYSZYG1" class="button" target="_blank" style="color: inherit;">+60 11-1253 5249</a>
+                </div>
+                <br>
+                 <div class="contact-item">
+                <a href="https://wa.me/qr/N2U26AFTCZPCI1" class="button"target="_blank" style="color: inherit;">+60 11-3321 4560</a>
+                 </div>
+                <br>
+                 <div class="contact-item">
+                <a href="https://wa.me/qr/55JETMBOYSZYG1" class="button"target="_blank" style="color: inherit;">+60 14-296 7473</a>
+                 </div>
+
+            </div>
+                
+            <div class="card">
+                 <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+            </a>
+    
+</div>
+                <h3>OUR OFFICE LOCATION</h3>
+
+                <p> <a href="https://www.google.com/maps/place/Sri+Ternak+Food+Mart/@3.2425864,101.6668472,17z/data=!3m1!4b1!4m6!3m5!1s0x31cc471c822596d7:0xc69c96a763c40b55!8m2!3d3.2425864!4d101.6668472!16s%2Fg%2F11bbrc7nqj?entry=ttu&g_ep=EgoyMDI2MDcxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit;">
+                    SRI TERNAK FOOD MART SDN BHD
+                    Company Registration No: 351362-M (199501022159)
+                    Block 7H, 7J & 7K, Batu 7 ½, Jalan Rawang, Selayang, 
+                    68100 Batu Caves, Selangor D.E.
+                    <br>
+                    
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
